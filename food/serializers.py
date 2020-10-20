@@ -7,3 +7,4 @@ class IngredientsSerializer(serializers.ModelSerializer):
         model = Ingredients
         fields = '__all__'
 
+
