@@ -9,6 +9,14 @@ class AllergyList(generics.ListCreateAPIView):
     serializer_class = AllergySerializer
 
 
+class AllergyUpdate(generics.CreateAPIView):
+    queryset = Allergy.objects.all()
+    serializer_class = AllergySerializer
+
+    def perform_update(self, serializer):
+        serializer.save(user=self.request.user)
+
+
 class EtcList(generics.ListCreateAPIView):
     queryset = Etc.objects.all()
     serializer_class = EtcSerializer
