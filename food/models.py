@@ -53,6 +53,12 @@ class Direction(models.Model):
         return self.order
 
 
+class RelatedReceipe(models.Model):
+    content = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.content
+
 
 class Recipe(models.Model):
     name = models.CharField(max_length=100)
@@ -74,7 +80,7 @@ class Ingredients(models.Model):
     division = models.CharField(max_length=20)
     name = models.CharField(max_length=100)
     barcodeNumber = models.IntegerField()
-    relatedRecipes = models.ManyToManyField(Recipe, blank=True)
+    relatedRecipes = models.ManyToManyField(RelatedReceipe, blank=True)
     brand = models.CharField(max_length=100)
     price = models.CharField(max_length=100)
     warnings = models.ManyToManyField(Warn, blank=True)
