@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-from food.models import Ingredients, Recipe, Warn, Feature, CrossReaction, Allergies, RecipeIng, Seasoning, Direction
+from food.models import *
 
 admin.site.register(Recipe)
 admin.site.register(Feature)
@@ -9,6 +9,7 @@ admin.site.register(Warn)
 admin.site.register(CrossReaction)
 
 admin.site.register(Allergies)
+admin.site.register(RelatedReceipe)
 admin.site.register(RecipeIng)
 admin.site.register(Seasoning)
 admin.site.register(Direction)
