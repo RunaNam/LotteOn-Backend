@@ -1,22 +1,26 @@
 from django.shortcuts import render
-from rest_framework import generics
-from rest_framework.generics import UpdateAPIView
+from rest_framework import generics, permissions
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
 
 from .models import Allergy, Etc
 from .serializers import AllergySerializer, EtcSerializer
 
 
-class AllergyList(generics.ListCreateAPIView):
+# @api_view(['GET'])
+class AllergyList(generics.ListAPIView):
     queryset = Allergy.objects.all()
     serializer_class = AllergySerializer
 
-#
-# class AllergyUpdate(generics.ListCreateAPIView):
-#     queryset = Allergy.objects.all()
-#     serializer_class = AllergySerializer
-#
-#     def perform_update(self, serializer):
-#         serializer.save(user=self.request.user)
+
+# @api_view(['POST'])
+class AllergyUpdate(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Allergy.objects.all()
+    serializer_class = AllergySerializer
+    #
+    # def update(self, request, *args, **kwargs):
+    #     return self.update(request, *args, **kwargs)
+
 
 
 class EtcList(generics.ListCreateAPIView):

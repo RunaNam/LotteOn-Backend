@@ -13,9 +13,6 @@ class AllergySerializer(serializers.ModelSerializer):
         model = Allergy
 
 
-
-
-
 class EtcSerializer(serializers.ModelSerializer):
     class Meta:
         fields = (
