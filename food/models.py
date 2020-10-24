@@ -31,7 +31,7 @@ class Allergies(models.Model):
 
 class RecipeIng(models.Model):
     name = models.CharField(max_length=100)
-    quantity = models.IntegerField()
+    quantity = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
@@ -39,7 +39,7 @@ class RecipeIng(models.Model):
 
 class Seasoning(models.Model):
     name = models.CharField(max_length=100)
-    quantity = models.IntegerField()
+    quantity = models.CharField(max_length=100)
 
     def __str__(self):
         return self.name
