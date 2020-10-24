@@ -17,12 +17,13 @@ class AllergyList(generics.ListAPIView):
 class AllergyUpdate(generics.RetrieveUpdateDestroyAPIView):
     queryset = Allergy.objects.all()
     serializer_class = AllergySerializer
-    #
-    # def update(self, request, *args, **kwargs):
-    #     return self.update(request, *args, **kwargs)
 
 
+class EtcList(generics.ListAPIView):
+    queryset = Etc.objects.all()
+    serializer_class = EtcSerializer
 
-class EtcList(generics.ListCreateAPIView):
+
+class EtcUpdate(generics.RetrieveUpdateDestroyAPIView):
     queryset = Etc.objects.all()
     serializer_class = EtcSerializer
