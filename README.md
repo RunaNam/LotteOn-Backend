@@ -9,7 +9,7 @@
 #### ✨ [알러지 리스트](http://runanam.pythonanywhere.com/allergy/)
 #### ✨ [기타 리스트](http://runanam.pythonanywhere.com/allergy/)
 #### ✨ [레시피 리스트](http://runanam.pythonanywhere.com/food/receipe/)
-#### ✨ [재료 리스트](http://runanam.pythonanywhere.com/ingredient/)
+#### ✨ [재료 리스트](http://runanam.pythonanywhere.com/food/ingredient/)
 
 ## 🐶 사용 기술 스택
 - <img src="https://img.shields.io/badge/django%20-%23092E20.svg?&style=for-the-badge&logo=django&logoColor=white"/>
