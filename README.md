@@ -5,7 +5,7 @@
 
 > LOTTE X LIKELION 
 
-### 🏠 [Homepage]()
+## 🏠 Homepage
 #### ✨ [알러지 리스트](http://runanam.pythonanywhere.com/allergy/)
 #### ✨ [기타 리스트](http://runanam.pythonanywhere.com/allergy/)
 
