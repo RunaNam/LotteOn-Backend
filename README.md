@@ -4,6 +4,10 @@
 </p>
 
 > LOTTE X LIKELION 
+>
+## 🦁 TEAM 수상하냥
+- 개발: [김상효](https://github.com/SH0123), [남민정](https://github.com/RunaNam)
+- 기획: 고민경, 김채림
 
 ## 🏠 Homepage
 #### ✨ [알러지 리스트](http://runanam.pythonanywhere.com/allergy/)
@@ -16,6 +20,4 @@
 - Rest framework
 - Python Anywhere
 
-## Author
 
-👤 **수상한대🦁 - 고민경, 김상효, 김채림, 남민정**
